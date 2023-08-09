@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../public/Logo.png";
 import Logo2 from "../../public/logo.svg";
 import Link from "next/link";
 import { useState } from "react";
@@ -30,19 +29,19 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em]">
             <Link href="#">
-              <li className=" hover:border-b ">About</li>
+              <li className="  ">About</li>
             </Link>
             <Link href="#">
-              <li className="  hover:border-b ">Services</li>
+              <li className="  ">Services</li>
             </Link>
             <Link href="#">
-              <li className=" hover:border-b ">Career</li>
+              <li className="  ">Career</li>
             </Link>
             <Link href="#">
-              <li className=" hover:border-b ">Gallery</li>
+              <li className="  ">Gallery</li>
             </Link>
             <Link href="#">
-              <li className=" hover:border-b  ">Contacts</li>
+              <li className="   ">Contacts</li>
             </Link>
           </ul>
         </div>
@@ -59,7 +58,7 @@ const Navbar = () => {
           <div
             className={
               menuOpen
-                ? "fixed left-0 top-0 w-full md:hidden  bg-[#010A05BF] z-10  ease-in duration-500  h-[642px] flex text-center justify-center "
+                ? "fixed left-0 top-0 w-full md:hidden  bg-[#010A05BF] z-10  ease-in duration-500  h-[642px] flex text-center justify-center  "
                 : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
             }
           >

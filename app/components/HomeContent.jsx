@@ -1,28 +1,22 @@
-import Image from "next/image";
-import Days7 from "../../public/image/days7_yourney_mobile.svg";
 import ArrayCity from "./ArreyCity";
 import Weoffer from "./Weoffer";
 import ButtonHome from "./ButtonHome";
+import Image7Days from "./Image7Days";
+import LabelHomeContent from "./LabelHomeContent";
 
 const HomeContent = () => {
   return (
-    <div className="mt-9 text-white md:relative ">
-      <Image
-        src={Days7}
-        alt="7days"
-        width="118"
-        height="52"
-        className="cursor-pointe ml-auto md:w-[230px] md:h-[88px] xl:w-[305px] xl:h-[123px]"
-        priority
-      />
-      <div className="w-[280px] h-[168px] md:w-[426px] md:h-[243px] md:leading-none md:tracking-tighter md:absolute  mt-6 mb-6 md:mt-0 md:mb-0 md:top-0 md:left-0 uppercase text-[40px] md:text-[62px] xl:text-[98px] tracking-[-1.6px] ">
-        <span className="font-medium">Uncover </span>
-        <span className="font-thin">Carpathian’s </span>
-        <span className="font-thin">Secrets</span>
+    <div className="mt-9 text-white h:full md:relative md:mt-16 xl:mt-[72px] xl:h-[577px] xl:py-6">
+      <div className="md:w-[230px] ml-auto h-full xl:w-[295px]">
+        <Image7Days />
+        <div className="  mt-6 mb-6  flex flex-col gap-6 md:mt-0 md:mb-0 md:top-0 md:left-0 md:absolute md:h-full  md:justify-between xl:h-[553px]">
+          <LabelHomeContent />
+          <ArrayCity />
+        </div>
+
+        <Weoffer />
+        <ButtonHome />
       </div>
-      <ArrayCity />
-      <Weoffer />
-      <ButtonHome />
     </div>
   );
 };

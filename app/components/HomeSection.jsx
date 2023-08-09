@@ -10,9 +10,6 @@ const HomeSection = () => {
       <div className="container-main">
         <Navbar />
         <HomeContent />
-        {/* <ArrayCity />
-        <Weoffer />
-        <ButtonHome /> */}
       </div>
     </section>
   );
