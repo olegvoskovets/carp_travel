@@ -30,6 +30,10 @@
   --bg-image-servisec5-tablet: url("../public/image/dataServisecImage/bg5-tablet.png");
   --bg-image-servisec5-decktop: url("../public/image/dataServisecImage/bg5-decktop.png");
 
+  --bg-image-contacts_section_mobile: url("../public/image/dataServisecImage/contact_bg_mobile.png");
+  --bg-image-contacts_section_tablet: url("../public/image/dataServisecImage/contact_bg_tablet.png");
+  --bg-image-contacts_section_desktop: url("../public/image/dataServisecImage/contact_bg_desktop.png");
+
   --servises1_foto_mobile: url("../public/image/dataServisecImage/servises1_mobile.png");
   --servises1_foto_tablet: url("../public/image/dataServisecImage/servises1_tablet.png");
   --servises1_foto_desktop: url("../public/image/dataServisecImage/servises1_desktop.png");

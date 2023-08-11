@@ -6,16 +6,25 @@ const array = [
   "rafting",
 ];
 
-const ArrayServices = ({ handleClickItem }) => {
+const ArrayServices = ({ handleClickItem, activeNumber }) => {
   return (
     <ul className="uppercase flex flex-col gap-4 text-[20px] mb-[34px] bg:text-[22px] xl:text-[28px] xl:leading-6 leading-4 font-extralight cursor-pointer xl:gap-6">
       {array.map((item, index) => (
-        <li className="" key={item} onClick={() => handleClickItem(index)}>
+        <li
+          className={
+            index === activeNumber ? `font-medium flex items-center ` : ""
+          }
+          key={item}
+          onClick={() => handleClickItem(index)}
+        >
+          {index === activeNumber && (
+            <div className=" inline-block w-[6px] h-[6px] bg-white rotate-45 mr-2 "></div>
+          )}
           {index === 2 ? (
-            <span>
+            <div className="inline-block">
               hot air
               <br /> ballooning
-            </span>
+            </div>
           ) : (
             item
           )}

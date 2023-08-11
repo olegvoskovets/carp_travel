@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 import Logo2 from "../../public/logo.svg";
@@ -45,7 +46,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="#">Contacts</Link>
+              <Link href="#contacts">Contacts</Link>
             </li>
           </ul>
         </div>
@@ -59,7 +60,18 @@ const Navbar = () => {
         )}
 
         {menuOpen && (
-          <div
+          <motion.div
+            initial={{
+              x: -1000,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.15,
+            }}
             className={
               menuOpen
                 ? "fixed left-0 top-0 w-full md:hidden  bg-[#010A05BF] z-10  ease-in duration-500  h-[642px] flex text-center justify-center backdrop-blur-xl min-h-screen  "
@@ -73,7 +85,10 @@ const Navbar = () => {
               >
                 close
               </span>
-              <ul className=" flex flex-col gap-12 text-white text-[18px]  justify-center tracking-wider ">
+              <ul
+                className=" flex flex-col gap-12 text-white text-[18px]  justify-center tracking-wider "
+                onClick={handleClickMenu}
+              >
                 <li>
                   <Link href="#">About </Link>
                 </li>
@@ -91,11 +106,11 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <Link href="#">Contacts </Link>
+                  <Link href="#contacts">Contacts </Link>
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </nav>

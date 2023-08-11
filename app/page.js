@@ -1,3 +1,4 @@
+import Contacts from "./components/Contacts/Contacts";
 import HomeSection from "./components/HomeSection";
 import Servisec from "./components/Services/Servisec";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <HomeSection />
       <Servisec />
+      <Contacts />
     </>
   );
 }

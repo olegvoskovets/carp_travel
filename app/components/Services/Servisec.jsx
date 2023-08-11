@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ArrayServices from "./ArrayServices";
+import { motion } from "framer-motion";
 
 import { useMediaQuery } from "react-responsive";
 import WiOffer from "../../../public/image/dataServisecImage/we_offer_mobile.svg";
@@ -107,14 +108,28 @@ const Servisec = () => {
         <div className="md:flex md:justify-between md:gap-5">
           <div className="">
             <Example>
-              <div
+              <motion.div
+                initial={{
+                  x: -1000,
+                  opacity: 0,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 0.3,
+                }}
                 className={`${myUrlFoto} w-full h-[213px] bg-no-repeat object-cover md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]`}
-              ></div>
+              ></motion.div>
             </Example>
           </div>
           <div className=" md:relative md:flex md:flex-col md:justify-between xl:flex-row xl:w-full">
             <TitleSevise title={titleServise[indexServisec]} />
-            <ArrayServices handleClickItem={handleClickItem} />
+            <ArrayServices
+              handleClickItem={handleClickItem}
+              activeNumber={indexServisec}
+            />
             <TextServise text={textServise[indexServisec]} />
           </div>
         </div>

@@ -10,7 +10,7 @@ const ButtonHome = () => {
         alt="LeftSvg"
         width="35"
         height="53"
-        className="cursor-pointe absolute top-0 left-0   "
+        className="cursor-pointer absolute top-0 left-0   "
         priority
       />
 
@@ -22,7 +22,7 @@ const ButtonHome = () => {
         alt="LeftSvg"
         width="35"
         height="53"
-        className="cursor-pointe absolute bottom-0 right-0 "
+        className="cursor-pointer absolute bottom-0 right-0 "
         priority
       />
     </div>
