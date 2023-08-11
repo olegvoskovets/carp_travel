@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color: white;
+  --bg-color-main: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+
+  --bg-image-home_section_mobile: url("../public/image/background_mobile_home.png");
+  --bg-image-home_section_tablet: url("../public/image/background_tablet_home.png");
+  --bg-image-home_section_desktop: url("../public/image/background_desktop_home.png");
+
+  --bg-image-servisec1-mobile: url("../public/image/service1_mobile.png");
+  --bg-image-servisec1-tablet: url("../public/image/service1_tablet.png");
+  --bg-image-servisec1-decktop: url("../public/image/services1_decktop.png");
+
+  --bg-image-servisec2-mobile: url("../public/image/dataServisecImage/bg2-mobile.png");
+  --bg-image-servisec2-tablet: url("../public/image/dataServisecImage/bg2-tablet.png");
+  --bg-image-servisec2-decktop: url("../public/image/dataServisecImage/bg2-decktop.png");
+
+  --bg-image-servisec3-mobile: url("../public/image/dataServisecImage/bg3-mobile.png");
+  --bg-image-servisec3-tablet: url("../public/image/dataServisecImage/bg3-tablet.png");
+  --bg-image-servisec3-decktop: url("../public/image/dataServisecImage/bg3-decktop.png");
+
+  --bg-image-servisec4-mobile: url("../public/image/dataServisecImage/bg4-mobile.png");
+  --bg-image-servisec4-tablet: url("../public/image/dataServisecImage/bg4-tablet.png");
+  --bg-image-servisec4-decktop: url("../public/image/dataServisecImage/bg4-decktop.png");
+
+  --bg-image-servisec5-mobile: url("../public/image/dataServisecImage/bg5-mobile.png");
+  --bg-image-servisec5-tablet: url("../public/image/dataServisecImage/bg5-tablet.png");
+  --bg-image-servisec5-decktop: url("../public/image/dataServisecImage/bg5-decktop.png");
+
+  --servises1_foto_mobile: url("../public/image/dataServisecImage/servises1_mobile.png");
+  --servises1_foto_tablet: url("../public/image/dataServisecImage/servises1_tablet.png");
+  --servises1_foto_desktop: url("../public/image/dataServisecImage/servises1_desktop.png");
+
+  --servises2_foto_mobile: url("../public/image/dataServisecImage/servises2_mobile.png");
+  --servises2_foto_tablet: url("../public/image/dataServisecImage/servises2_tablet.png");
+  --servises2_foto_desktop: url("../public/image/dataServisecImage/servises2_desktop.png");
+
+  --servises3_foto_mobile: url("../public/image/dataServisecImage/servises3_mobile.png");
+  --servises3_foto_tablet: url("../public/image/dataServisecImage/servises3_tablet.png");
+  --servises3_foto_desktop: url("../public/image/dataServisecImage/servises3_desktop.png");
+
+  --servises4_foto_mobile: url("../public/image/dataServisecImage/servises4_mobile.png");
+  --servises4_foto_tablet: url("../public/image/dataServisecImage/servises4_tablet.png");
+  --servises4_foto_desktop: url("../public/image/dataServisecImage/servises4_desktop.png");
+
+  --servises5_foto_mobile: url("../public/image/dataServisecImage/servises5_mobile.png");
+  --servises5_foto_tablet: url("../public/image/dataServisecImage/servises5_tablet.png");
+  --servises5_foto_desktop: url("../public/image/dataServisecImage/servises5_desktop.png");
+
+  --color-number: rgba(255, 255, 255, 0.2);
+}
+
 .container-main {
   @apply container w-[320px] m-auto md:w-[768px]  xl:w-[1280px] px-5 md:px-8 xl:px-6;
 }

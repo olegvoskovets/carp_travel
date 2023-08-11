@@ -28,21 +28,25 @@ const Navbar = () => {
 
         <div>
           <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em]">
-            <Link href="#">
-              <li className="  ">About</li>
-            </Link>
-            <Link href="#">
-              <li className="  ">Services</li>
-            </Link>
-            <Link href="#">
-              <li className="  ">Career</li>
-            </Link>
-            <Link href="#">
-              <li className="  ">Gallery</li>
-            </Link>
-            <Link href="#">
-              <li className="   ">Contacts</li>
-            </Link>
+            <li>
+              <Link href="#">About </Link>
+            </li>
+
+            <li>
+              <Link href="#servisec">Services</Link>
+            </li>
+
+            <li>
+              <Link href="#">Career</Link>
+            </li>
+
+            <li>
+              <Link href="#">Gallery </Link>
+            </li>
+
+            <li>
+              <Link href="#">Contacts</Link>
+            </li>
           </ul>
         </div>
         {!menuOpen && (
@@ -58,7 +62,7 @@ const Navbar = () => {
           <div
             className={
               menuOpen
-                ? "fixed left-0 top-0 w-full md:hidden  bg-[#010A05BF] z-10  ease-in duration-500  h-[642px] flex text-center justify-center  "
+                ? "fixed left-0 top-0 w-full md:hidden  bg-[#010A05BF] z-10  ease-in duration-500  h-[642px] flex text-center justify-center backdrop-blur-xl min-h-screen  "
                 : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
             }
           >
@@ -70,21 +74,25 @@ const Navbar = () => {
                 close
               </span>
               <ul className=" flex flex-col gap-12 text-white text-[18px]  justify-center tracking-wider ">
-                <Link href="#">
-                  <li className="  ">About</li>
-                </Link>
-                <Link href="#">
-                  <li className="   ">Services</li>
-                </Link>
-                <Link href="#">
-                  <li className="  ">Career</li>
-                </Link>
-                <Link href="#">
-                  <li className="  ">Gallery</li>
-                </Link>
-                <Link href="#">
-                  <li className="   ">Contacts</li>
-                </Link>
+                <li>
+                  <Link href="#">About </Link>
+                </li>
+
+                <li>
+                  <Link href="#servisec">Services</Link>
+                </li>
+
+                <li>
+                  <Link href="#">Career</Link>
+                </li>
+
+                <li>
+                  G<Link href="#">allery </Link>
+                </li>
+
+                <li>
+                  <Link href="#">Contacts </Link>
+                </li>
               </ul>
             </div>
           </div>
