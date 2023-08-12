@@ -5,6 +5,10 @@
 :root {
   color: white;
   --bg-color-main: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+  --bg-color-contact: linear-gradient(
+    rgba(2, 15, 8, 0.75),
+    rgba(2, 15, 8, 0.75)
+  );
 
   --bg-image-home_section_mobile: url("../public/image/background_mobile_home.png");
   --bg-image-home_section_tablet: url("../public/image/background_tablet_home.png");

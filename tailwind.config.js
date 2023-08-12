@@ -9,8 +9,12 @@ module.exports = {
     colors: {
       color_number: "rgba(255, 255, 255, 0.20)",
       blue: "#007ace",
-      red: "#de3618",
+      red: "#FF5757",
       white: "#fff",
+      input_color: "rgba(255, 255, 255, 0.05)",
+    },
+    fontWeight: {
+      thin: "200",
     },
     extend: {
       backgroundImage: {
@@ -77,11 +81,11 @@ module.exports = {
         servisec5_desktop: "var(--servises5_foto_desktop)",
 
         contacts_section_mobile:
-          "var(--bg-color-main), var(--bg-image-contacts_section_mobile)",
+          "var(--bg-color-contact), var(--bg-image-contacts_section_mobile)",
         contacts_section_tablet:
-          "var(--bg-color-main), var(--bg-image-contacts_section_tablet)",
+          "var(--bg-color-contact), var(--bg-image-contacts_section_tablet)",
         contacts_section_desktop:
-          "var(--bg-color-main), var(--bg-image-contacts_section_desktop)",
+          "var(--bg-color-contact), var(--bg-image-contacts_section_desktop)",
 
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -30,7 +30,7 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em]">
             <li>
-              <Link href="#">About </Link>
+              <Link href="#">About</Link>
             </li>
 
             <li>
