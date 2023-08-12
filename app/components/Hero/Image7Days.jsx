@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Days7 from "../../public/image/days7_yourney_mobile.svg";
+import Days7 from "../../../public/image/days7_yourney_mobile.svg";
 
 const Image7Days = () => {
   return (

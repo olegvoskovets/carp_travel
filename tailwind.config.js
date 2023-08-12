@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       color_number: "rgba(255, 255, 255, 0.20)",
+      color_text_servisec: "rgba(255, 255, 255, 0.40)",
       blue: "#007ace",
       red: "#FF5757",
       white: "#fff",
@@ -15,6 +16,9 @@ module.exports = {
     },
     fontWeight: {
       thin: "200",
+      fontWeight500: "500",
+      fontWeight100: "100",
+      fontWeight400: "400",
     },
     extend: {
       backgroundImage: {

@@ -23,7 +23,7 @@ const FormContacts = () => {
         onSubmit={handleSubmit(omSubmit)}
         className="flex flex-col gap-6 md:flex-row md:gap-5 xl:flex-col"
       >
-        <div className="flex flex-col md:w-[221px]  xl:flex-row xl:w-full xl:justify-between">
+        <div className="flex flex-col md:w-[221px]  xl:flex-row xl:w-full xl:justify-between xl:gap-5">
           <label className="flex gap-1 flex-col xl:flex-1">
             <span>Full name</span>
             <div>

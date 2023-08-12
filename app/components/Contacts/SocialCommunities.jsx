@@ -6,11 +6,11 @@ const SocialCommunities = () => {
       <div>
         <span className="text-[12px] font-thin">Follow us</span>
       </div>
-      <ul className="w-[81px]">
-        <li>facebook</li>
-        <li>instagram</li>
-        <li>youtube</li>
-        <li>tiktok</li>
+      <ul className="w-[81px] cursor-pointer font-fontWeight400">
+        <li className="hover:underline">facebook</li>
+        <li className="hover:underline">instagram</li>
+        <li className="hover:underline">youtube</li>
+        <li className="hover:underline">tiktok</li>
       </ul>
     </div>
   );

@@ -12,7 +12,9 @@ const ArrayServices = ({ handleClickItem, activeNumber }) => {
       {array.map((item, index) => (
         <li
           className={
-            index === activeNumber ? `font-medium flex items-center ` : ""
+            index === activeNumber
+              ? `font-fontWeight500 flex items-center `
+              : "font-fontWeight100 text-color_text_servisec hover:ml-2 duration-200 transition-all"
           }
           key={item}
           onClick={() => handleClickItem(index)}
@@ -21,7 +23,7 @@ const ArrayServices = ({ handleClickItem, activeNumber }) => {
             <div className=" inline-block w-[6px] h-[6px] bg-white rotate-45 mr-2 "></div>
           )}
           {index === 2 ? (
-            <div className="inline-block">
+            <div className="inline-block ">
               hot air
               <br /> ballooning
             </div>
