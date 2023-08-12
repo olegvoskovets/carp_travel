@@ -110,7 +110,7 @@ const Servisec = () => {
             <Example>
               <motion.div
                 initial={{
-                  x: -1000,
+                  x: -600,
                   opacity: 0,
                 }}
                 animate={{
@@ -118,7 +118,7 @@ const Servisec = () => {
                   opacity: 1,
                 }}
                 transition={{
-                  duration: 0.35,
+                  duration: 0.7,
                 }}
                 className={`${myUrlFoto} w-full h-[213px] bg-no-repeat object-cover md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]`}
               ></motion.div>

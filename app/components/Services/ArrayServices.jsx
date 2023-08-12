@@ -14,7 +14,7 @@ const ArrayServices = ({ handleClickItem, activeNumber }) => {
           className={
             index === activeNumber
               ? `font-fontWeight500 flex items-center `
-              : "font-fontWeight100 text-color_text_servisec hover:ml-2 duration-200 transition-all"
+              : "font-fontWeight100 text-color_text_servisec hover:ml-2 hover:text-white duration-200 transition-all"
           }
           key={item}
           onClick={() => handleClickItem(index)}
