@@ -97,7 +97,7 @@ const Servisec = () => {
   return (
     <section
       id="servisec"
-      className={`${my_bg_foto}  h-[851px] md:h-[621px] xl:h-[779px]  bg-no-repeat  bg-cover pb-14 pt-[54px] md:py-[65px] xl:py-[104px] `}
+      className={`${my_bg_foto}   h-[851px] md:h-[621px] xl:h-[779px]  bg-no-repeat  bg-cover pb-14 pt-[54px] md:py-[65px] xl:py-[104px] `}
     >
       <div className="container-main ">
         <div className="md:flex md:justify-between xl:justify-normal">
@@ -118,7 +118,7 @@ const Servisec = () => {
                   opacity: 1,
                 }}
                 transition={{
-                  duration: 0.3,
+                  duration: 0.35,
                 }}
                 className={`${myUrlFoto} w-full h-[213px] bg-no-repeat object-cover md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]`}
               ></motion.div>

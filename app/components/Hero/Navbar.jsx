@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import Logo2 from "../../../public/logo.svg";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll/modules";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -16,37 +17,77 @@ const Navbar = () => {
   return (
     <nav className="w-full h-8 ">
       <div className="flex justify-between items-center h-full w-full ">
-        <Link href="/">
+        <Link to="about" spy={true} smooth={true} offset={50} duration={300}>
           <Image
             src={Logo2}
             alt="logo"
             width="61"
             height="32"
-            className="cursor-pointe w-full  "
+            className="cursor-pointe w-full cursor-pointer "
             priority
           />
         </Link>
 
         <div>
-          <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em]">
+          <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em] cursor-pointer">
             <li>
-              <Link href="#">About</Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+              >
+                About
+              </Link>
             </li>
 
             <li>
-              <Link href="#servisec">Services</Link>
+              <Link
+                to="servisec"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+              >
+                Services
+              </Link>
             </li>
 
             <li>
-              <Link href="#">Career</Link>
+              <Link
+                to="carerr"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+              >
+                Career
+              </Link>
             </li>
 
             <li>
-              <Link href="#">Gallery </Link>
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+              >
+                Gallery
+              </Link>
             </li>
 
             <li>
-              <Link href="#contacts">Contacts</Link>
+              <Link
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={300}
+              >
+                Contacts
+              </Link>
             </li>
           </ul>
         </div>

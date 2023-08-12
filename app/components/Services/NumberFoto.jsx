@@ -8,6 +8,7 @@ const NumberFoto = ({ number }) => {
   return (
     <p className="text-[43px] font-thin md:text-[67px] xl:text-[98px]  text-right  ">
       <span>{returnNumber(number)}</span>
+
       <span>/</span>
       <span className="text-color_number">05</span>
     </p>
