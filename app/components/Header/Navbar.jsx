@@ -7,7 +7,7 @@ import Logo2 from "../../../public/logo.svg";
 import { Link } from "react-scroll/modules";
 import { useState } from "react";
 
-const Navbar = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClickMenu = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
               Services
             </Link>
 
-            <Link
+            {/* <Link
               to="carerr"
               spy={true}
               smooth={true}
@@ -58,9 +58,9 @@ const Navbar = () => {
               duration={300}
             >
               Career
-            </Link>
+            </Link> */}
 
-            <Link
+            {/* <Link
               to="gallery"
               spy={true}
               smooth={true}
@@ -68,7 +68,7 @@ const Navbar = () => {
               duration={300}
             >
               Gallery
-            </Link>
+            </Link> */}
 
             <Link
               to="contacts"
@@ -141,7 +141,7 @@ const Navbar = () => {
                   Services
                 </Link>
 
-                <Link
+                {/* <Link
                   to="carerr"
                   spy={true}
                   smooth={true}
@@ -150,9 +150,9 @@ const Navbar = () => {
                   onClick={handleClickMenu}
                 >
                   Career
-                </Link>
+                </Link> */}
 
-                <Link
+                {/* <Link
                   to="gallery"
                   spy={true}
                   smooth={true}
@@ -160,8 +160,8 @@ const Navbar = () => {
                   duration={300}
                   onClick={handleClickMenu}
                 >
-                  Gallery{" "}
-                </Link>
+                  Gallery
+                </Link> */}
 
                 <Link
                   to="contacts"
@@ -182,4 +182,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
