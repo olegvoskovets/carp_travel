@@ -58,9 +58,21 @@
   --servises5_foto_tablet: url("../public/image/dataServisecImage/servises5_tablet.png");
   --servises5_foto_desktop: url("../public/image/dataServisecImage/servises5_desktop.png");
 
+  --bg-image-about_section_mobile: url("../public/image/about/about_mobile.png");
+  --bg-image-about_section_tablet: url("../public/image/about/about_tablet.png");
+  --bg-image-about_section_desktop: url("../public/image/about/about_desktop.png");
+
   --color-number: rgba(255, 255, 255, 0.2);
 }
 
 .container-main {
   @apply container w-[320px] m-auto md:w-[768px]  xl:w-[1280px] px-5 md:px-8 xl:px-6;
 }
+.container-about {
+  @apply m-auto md:w-[768px]  xl:w-[1280px] px-5 md:px-8 xl:px-6;
+}
+/* .main-text-section {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 100;
+} */

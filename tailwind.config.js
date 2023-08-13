@@ -95,9 +95,16 @@ module.exports = {
         contacts_section_desktop:
           "var(--bg-color-contact), var(--bg-image-contacts_section_desktop)",
 
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        about_section_mobile:
+          "var(--bg-color-main), var(--bg-image-about_section_mobile)",
+        about_section_tablet:
+          "var(--bg-color-main), var(--bg-image-about_section_tablet)",
+        about_section_desktop:
+          "var(--bg-color-main), var(--bg-image-about_section_desktop)",
+
+        // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        // "gradient-conic":
+        //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
