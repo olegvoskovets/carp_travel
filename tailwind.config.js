@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     colors: {
       color_number: "rgba(255, 255, 255, 0.20)",
-      color_text_servisec: "rgba(255, 255, 255, 0.40)",
+      color_text_servisec40: "rgba(255, 255, 255, 0.40)",
+      color_text_servisec70: "rgba(255, 255, 255, 0.70)",
       blue: "#007ace",
       red: "#FF5757",
       white: "#fff",
@@ -18,8 +19,10 @@ module.exports = {
       thin: "200",
       fontWeight500: "500",
       fontWeight100: "100",
+      fontWeight200: "200",
       fontWeight400: "400",
     },
+    transitionProperty: {},
     extend: {
       backgroundImage: {
         home_section_mobile:

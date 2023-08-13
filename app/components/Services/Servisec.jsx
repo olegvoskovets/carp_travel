@@ -5,23 +5,23 @@ import ArrayServices from "./ArrayServices";
 import { motion } from "framer-motion";
 
 import { useMediaQuery } from "react-responsive";
-import WiOffer from "../../../public/image/dataServisecImage/we_offer_mobile.svg";
-import Image from "next/image";
+// import WiOffer from "../../../public/image/dataServisecImage/we_offer_mobile.svg";
+// import Image from "next/image";
 import WeOffer from "./WeOffer";
 import NumberFoto from "./NumberFoto";
 import TitleSevise from "./TitleSevise";
 import TextServise from "./TextServise";
 
-const dataServisec = [
-  {
-    fotoImage: ["servisec1_mobile", "servisec1_tablet", "servisec1_desktop"],
-  },
-];
+// const dataServisec = [
+//   {
+//     fotoImage: ["servisec1_mobile", "servisec1_tablet", "servisec1_desktop"],
+//   },
+// ];
 
 const Servisec = () => {
   const [indexServisec, setIndexServisec] = useState(0);
   const [device, setDevice] = useState(null);
-  const [fotoimage_bacground, setFotoImage_bacground] = useState(null);
+  // const [fotoimage_bacground, setFotoImage_bacground] = useState(null);
 
   const handleClickItem = (i) => {
     setIndexServisec(i);
@@ -56,7 +56,7 @@ const Servisec = () => {
     };
 
     myDevice(viewport);
-    setFotoImage_bacground(`bg-servisec${String(indexServisec + 1)}_${device}`);
+    // setFotoImage_bacground(`bg-servisec${String(indexServisec + 1)}_${device}`);
 
     return children;
   };
@@ -118,17 +118,20 @@ const Servisec = () => {
                   opacity: 1,
                 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.5,
                 }}
                 className={`${myUrlFoto} w-full h-[213px] bg-no-repeat object-cover md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]`}
               ></motion.div>
             </Example>
           </div>
           <div className=" md:relative md:flex md:flex-col md:justify-between xl:flex-row xl:w-full">
-            <TitleSevise title={titleServise[indexServisec]} />
+            {device !== "desktop" && (
+              <TitleSevise title={titleServise[indexServisec]} />
+            )}
             <ArrayServices
               handleClickItem={handleClickItem}
               activeNumber={indexServisec}
+              title={device === "desktop" ? titleServise[indexServisec] : null}
             />
             <TextServise text={textServise[indexServisec]} />
           </div>

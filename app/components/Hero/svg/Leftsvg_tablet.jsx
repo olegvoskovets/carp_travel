@@ -1,0 +1,30 @@
+import React from "react";
+
+const Leftsvg_tablet = ({ className }) => {
+  return (
+    <svg className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="35"
+      height="50"
+      viewBox="0 0 35 50"
+      fill="none"
+    >
+      <rect width="0.795455" height="11" fill="white" />
+      <rect width="35" height="1" fill="white" />
+      <rect
+        width="0.795455"
+        height="11"
+        transform="matrix(1 0 0 -1 0 50)"
+        fill="white"
+      />
+      <rect
+        width="35"
+        height="1"
+        transform="matrix(1 0 0 -1 0 50)"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+export default Leftsvg_tablet;

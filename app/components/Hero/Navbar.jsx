@@ -29,76 +29,65 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em] cursor-pointer">
-            <li>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={300}
-              >
-                About
-              </Link>
-            </li>
+          <nav className="hidden md:flex gap-6 text-white text-[14px] tracking-[.11em] cursor-pointer list-none">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
+              About
+            </Link>
 
-            <li>
-              <Link
-                to="servisec"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={300}
-              >
-                Services
-              </Link>
-            </li>
+            <Link
+              to="servisec"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
+              Services
+            </Link>
 
-            <li>
-              <Link
-                to="carerr"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={300}
-              >
-                Career
-              </Link>
-            </li>
+            <Link
+              to="carerr"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
+              Career
+            </Link>
 
-            <li>
-              <Link
-                to="gallery"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={300}
-              >
-                Gallery
-              </Link>
-            </li>
+            <Link
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
+              Gallery
+            </Link>
 
-            <li>
-              <Link
-                to="contacts"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={300}
-              >
-                Contacts
-              </Link>
-            </li>
-          </ul>
+            <Link
+              to="contacts"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
+              Contacts
+            </Link>
+          </nav>
         </div>
-        {!menuOpen && (
-          <span
-            onClick={handleClickMenu}
-            className="text-white uppercase text-[14px] md:hidden cursor-pointer tracking-[.11em]"
-          >
-            Menu
-          </span>
-        )}
+
+        <span
+          onClick={handleClickMenu}
+          className="text-white uppercase text-[14px] md:hidden cursor-pointer tracking-[.11em]"
+        >
+          Menu
+        </span>
 
         {menuOpen && (
           <motion.div
@@ -126,30 +115,65 @@ const Navbar = () => {
               >
                 close
               </span>
-              <ul
-                className=" flex flex-col gap-12 text-white text-[18px]  justify-center tracking-wider "
+              <nav
+                className=" flex flex-col gap-12 text-white text-[18px]  justify-center tracking-wider cursor-pointer list-none"
                 onClick={handleClickMenu}
               >
-                <li>
-                  <Link href="#">About </Link>
-                </li>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={300}
+                  onClick={handleClickMenu}
+                >
+                  About
+                </Link>
 
-                <li>
-                  <Link href="#servisec">Services</Link>
-                </li>
+                <Link
+                  to="servisec"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={300}
+                  onClick={handleClickMenu}
+                >
+                  Services
+                </Link>
 
-                <li>
-                  <Link href="#">Career</Link>
-                </li>
+                <Link
+                  to="carerr"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={300}
+                  onClick={handleClickMenu}
+                >
+                  Career
+                </Link>
 
-                <li>
-                  G<Link href="#">allery </Link>
-                </li>
+                <Link
+                  to="gallery"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={300}
+                  onClick={handleClickMenu}
+                >
+                  Gallery{" "}
+                </Link>
 
-                <li>
-                  <Link href="#contacts">Contacts </Link>
-                </li>
-              </ul>
+                <Link
+                  to="contacts"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={300}
+                  onClick={handleClickMenu}
+                >
+                  Contacts
+                </Link>
+              </nav>
             </div>
           </motion.div>
         )}
