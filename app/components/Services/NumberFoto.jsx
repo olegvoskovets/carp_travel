@@ -5,22 +5,15 @@ const NumberFoto = ({ number }) => {
     if (String(i).length < 2) {
       return (
         <motion.span
-          initial={{
-            y: -50,
-            opacity: 0,
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 2 }}
         >{`0${i}`}</motion.span>
       );
     }
     return <span>{i}</span>;
   };
+
   return (
     <p className="text-[43px] font-thin md:text-[67px] xl:text-[98px]  text-right  ">
       {returnNumber(number)}

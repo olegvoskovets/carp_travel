@@ -22,7 +22,7 @@ const returnTitle = (title) => {
       transition={{
         duration: 0.5,
       }}
-      className="text-[12px] font-fontWeight200 lowercase absolute left-[300px]  leading-loose tracking-widest text-right text-color_text_servisec70"
+      className="text-[12px] font-fontWeight200 lowercase absolute left-[310px]  leading-loose tracking-widest text-right text-color_text_servisec70"
     >
       {title}
     </motion.span>

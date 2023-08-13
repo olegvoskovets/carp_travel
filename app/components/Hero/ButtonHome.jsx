@@ -76,12 +76,12 @@ const ButtonHome = () => {
   };
 
   return (
-    <div className="relative mt-[26px] md:mt-[42px] h-[53px]">
+    <div className="relative mt-[26px] md:mt-[42px] ">
       <Example>
         <Link to="contacts" spy={true} smooth={true} offset={50} duration={300}>
           {returnLeftSvg("cursor-pointer absolute top-0 left-0   ")}
 
-          <button className="w-full  uppercase py-[13px] md:py-[11.5px] xl:py-[22px] px-16 bg-white bg-opacity-10 text-[18px] font-bold hover:bg-opacity-20 duration-200  ">
+          <button className="w-full  uppercase py-[13px] md:py-[11.5px] xl:py-[22px] px-16 bg-white bg-opacity-10 text-[18px] font-fontWeight700 hover:bg-opacity-20 duration-200  ">
             Join NOW
           </button>
           {returnRigthSvg("cursor-pointer absolute top-0 right-0 ")}

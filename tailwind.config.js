@@ -21,6 +21,7 @@ module.exports = {
       fontWeight100: "100",
       fontWeight200: "200",
       fontWeight400: "400",
+      fontWeight700: "700",
     },
     transitionProperty: {},
     extend: {

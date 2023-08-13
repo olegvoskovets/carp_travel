@@ -24,7 +24,7 @@ const FormContacts = () => {
         className="flex flex-col gap-6 md:flex-row md:gap-5 xl:flex-col"
       >
         <div className="flex flex-col md:w-[221px]  xl:flex-row xl:w-full xl:justify-between xl:gap-5">
-          <label className="flex gap-1 flex-col xl:flex-1">
+          <label className="flex gap-1 flex-col xl:flex-1 tracking-[0.2em]">
             <span>Full name</span>
             <div>
               <input
@@ -63,7 +63,7 @@ const FormContacts = () => {
             {/* {errors?.fullName?.type === "pattern" && <p> RYTRytyr імя</p>} */}
           </label>
 
-          <label className="flex gap-1 flex-col xl:flex-1">
+          <label className="flex gap-1 flex-col xl:flex-1 tracking-[0.2em]">
             <span>E-mail</span>
             <div>
               <input
@@ -94,7 +94,7 @@ const FormContacts = () => {
           </label>
         </div>
         <div className="flex flex-col gap-4 md:w-[463px] xl:w-full xl:justify-between ">
-          <label className="flex gap-1 flex-col">
+          <label className="flex gap-1 flex-col tracking-[0.2em]">
             <span>Message</span>
             <textarea className="w-full h-[193px] xl:h-[174px] bg-input_color resize-none outline-none text-[13px] xl:text-[20px] font-thin"></textarea>
           </label>

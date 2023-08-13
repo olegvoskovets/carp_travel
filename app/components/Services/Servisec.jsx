@@ -102,6 +102,7 @@ const Servisec = () => {
       <div className="container-main ">
         <div className="md:flex md:justify-between xl:justify-normal">
           <WeOffer />
+
           <NumberFoto number={indexServisec + 1} />
         </div>
 
